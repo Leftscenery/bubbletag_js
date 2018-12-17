@@ -21,9 +21,11 @@ BubbleTag is a js plugin uses for quick add bubble based tag.
 #### Instruction:
 + Build container in HTML
 <br>
-`<div class='containerName'></div>`
-<br>
-`<div class='containerName1'></div>`
+
+```
+<div class='containerName'></div>
+<div class='containerName1'></div>
+```
 
 +  Add new gesture to element, **this** already bind to element by default 
 ```javascript
