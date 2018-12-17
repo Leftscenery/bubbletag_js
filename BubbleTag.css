@@ -1,0 +1,56 @@
+:root{
+    --primary-color:rgba(145,152,159,0.7);
+    --alert: rgb(248,195,205);
+}
+.bubble-container{
+    font-family: sans-serif;
+    border: 1px solid var(--primary-color);
+    display: flex;
+    flex-wrap: wrap;
+    padding: 3px;
+    justify-content:flex-start;;
+    align-items: baseline;
+    align-content: baseline;
+}
+.bubble-item{
+    background-color: var(--primary-color);
+    /*border: 1px solid var(--primary-color);*/
+    color:white;
+    padding:3px 10px;
+    border-radius: 5px;
+    position: relative;
+    margin: 5px;
+    opacity: 0;
+    transform: scale(0.8);
+    transition: 0.1s all;
+}
+.bubble-item.animation{
+    opacity: 1;
+    transform: scale(1);
+}
+.bubble-container .input::placeholder{
+    color: var(--primary-color);
+}
+.bubble-container .input{
+    background-color: transparent;
+    flex-grow: 1;
+    border:none;
+    outline:none;
+    color: black;
+    padding: 0;
+    font-size: 15px;
+    text-decoration: none;
+    margin-left: 5px;
+    position: relative;
+}
+.bubble-item a{
+    text-decoration: none;
+    color:rgba(255,255,255,0.6);
+    width:15px;
+    height:15px;
+    margin-left: 7px;
+    transition: all 0.3s;
+}
+.bubble-item a:hover{
+    color: white;
+}
