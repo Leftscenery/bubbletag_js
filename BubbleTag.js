@@ -37,6 +37,7 @@ class BubbleTag {
             //Bind Input
             i.lastElementChild.onkeydown = (e) => {
                 if (e.keyCode == 13) {
+                    e.preventDefault();
                     this.add(e.target.value);
                     e.target.value = '';
                 }
