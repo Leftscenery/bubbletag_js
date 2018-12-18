@@ -40,6 +40,9 @@ class BubbleTag {
                     e.preventDefault();
                     this.add(e.target.value);
                     e.target.value = '';
+                }else if(e.keyCode == 8 && e.target.value === ''){
+                    e.preventDefault();
+                    this.remove(this.tagList[this.tagList.length-1].id);
                 }
             };
 
